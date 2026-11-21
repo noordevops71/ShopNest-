@@ -1,0 +1,46 @@
+cat > .gitignore <<'EOF'
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build outputs
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+logs/
+
+# PM2
+.pm2/
+
+# Private keys and certificates
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Database backups
+*.sql.gz
+*.dump
+*.backup
+
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.swp
+EOF
